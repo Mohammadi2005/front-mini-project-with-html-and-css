@@ -1,0 +1,682 @@
+/* App Fonts */
+
+@font-face {
+    font-family: "TTNorms";
+    src: url("../fonts/TTNorms-Regular.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Medium";
+    src: url("../fonts/TTNorms-Medium.otf") format("openType");
+}
+
+@font-face {
+    font-family: "TTNorms Light";
+    src: url("../fonts/TTNorms-Light.otf") format("openType");
+}
+
+@font-face {
+    font-family: "Times Roman Italic";
+    src: url("../fonts/Times-new-roman-italic.ttf") format("truetype");
+}
+
+/* Normalize Css */
+
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+hr {
+    box-sizing: content-box;
+    height: 0;
+    overflow: visible;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+a {
+    background-color: transparent;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration: underline dotted;
+}
+
+b,
+strong {
+    font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+
+small {
+    font-size: 80%;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+sup {
+    top: -0.5em;
+}
+
+img {
+    border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+}
+
+button,
+input {
+    overflow: visible;
+}
+
+button,
+select {
+    text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+    -webkit-appearance: button;
+}
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+    border-style: none;
+    padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+    outline: 1px dotted ButtonText;
+}
+
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    /* 3 */
+    white-space: normal;
+}
+
+progress {
+    vertical-align: baseline;
+}
+
+textarea {
+    overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+
+[type="search"] {
+    -webkit-appearance: textfield;
+    outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit;
+}
+
+details {
+    display: block;
+}
+
+summary {
+    display: list-item;
+}
+
+template {
+    display: none;
+}
+
+[hidden] {
+    display: none;
+}
+
+/* Start Project */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "TTNorms";
+}
+
+.container {
+    max-width: 65rem;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.head-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 0em;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.nav-img {
+    margin-right: 2em;
+}
+
+.a-options {
+    margin-left: 1em;
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+}
+
+.nav-btn {
+    background-color: rgb(35, 99, 238);
+    padding: 0em 1em;
+    border-radius: 0.4rem;
+    color: aliceblue;
+    height: 40px;
+    border: 0px;
+}
+
+.nav-icon {
+    width: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.head-body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    align-items: center;
+}
+
+.head-content {
+    flex-basis: 44%;
+    margin: 0px 1px;
+}
+
+.head-title,
+h2,
+h3,
+a {
+    font-weight: normal;
+    line-height: 1.4em;
+}
+
+.head-para {
+    line-height: 2em;
+    color: rgb(40, 58, 75);
+}
+
+.head-btns {
+    display: flex;
+}
+
+.btn-head-body {
+    margin: 0.3em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 99, 238);
+    border-radius: 10px;
+    border: 0px;
+    padding: 0.7em 1em;
+    width: 10rem;
+}
+
+.head-btns .btn-head-body:nth-child(1) {
+    background-color: rgb(72, 139, 40);
+}
+
+
+.head-img {
+    flex-basis: 50%;
+    width: 50%;
+}
+
+/* --------------head end--------------- */
+
+.head-end {
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
+.head-end-p {
+    color: rgb(40, 58, 75);
+    margin-top: 0em;
+}
+
+.head-end-simples {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+    margin-bottom: 5%;
+}
+
+.head-end-simp {
+    max-width: 28%;
+    min-width: 150px;
+}
+
+.head-end-simp-p {
+    line-height: 2em;
+    color: rgb(40, 58, 75);
+    margin-bottom: 2em;
+}
+
+.head-end-img {
+    width: 50%;
+}
+
+/* --------------comments--------------- */
+
+
+
+.container-comment {
+    background-color: rgb(35, 99, 238);
+}
+
+.comments {
+    background-color: rgb(35, 99, 238);
+    text-align: center;
+    color: rgb(247, 250, 253);
+    padding: 2rem 3rem;
+}
+
+.comment-head {
+    margin-top: 3rem;
+}
+
+.comment-head-p {
+    line-height: 2em;
+}
+
+.comment-head-tit {
+    margin: 0rem;
+}
+
+.comment-body {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4rem;
+
+}
+
+.comment-person {
+    background-color: rgb(243, 247, 250);
+    color: rgb(40, 58, 75);
+    border-radius: 0.2rem;
+    width: 28%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 7.1rem;
+    margin-top: 1rem;
+}
+
+.comment-person-text {
+    text-align: justify;
+    font-family: "Times Roman Italic";
+    height: 80%;
+    padding: 0.9rem;
+    padding-top: 0em;
+    line-height: 1.6em;
+}
+
+.comment-person-data {
+    font-family: "TTNorms";
+    display: flex;
+    gap: 1rem;
+    padding: 0rem 0.8rem;
+    align-items: center;
+    border-top: 0.1em solid rgba(40, 58, 75, 0.377);
+}
+
+.comment-logos {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.comment-logo-img {
+    width: 12%;
+}
+
+/* ---------portfolio------------ */
+
+.portfolio {
+    text-align: center;
+    padding: 5rem 0rem;
+}
+
+.portfolio-p {
+    color: rgb(40, 58, 75);
+    margin: 0rem;
+}
+
+.portfolio-imgs {
+    margin-top: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.portfolio-item {
+    width: 31%;
+    padding-bottom: 1rem;
+    display: block;
+}
+
+.portfolio-img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+/* --------- main end ---------- */
+
+.main-end {
+    background-color: rgb(35, 99, 238);
+}
+
+.main-end-contant {
+    background-color: rgb(35, 99, 238);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5rem 1rem;
+}
+
+.main-end-email {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+.main-end-email-text {
+    padding: 1rem;
+    border: 0rem;
+    outline: 0rem;
+    border-top-left-radius: 0.2rem;
+    border-bottom-left-radius: 0.2rem;
+}
+
+.main-end-email-btn {
+    background-color: rgb(35, 99, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    border-radius: 0.3rem;
+    padding: 1rem 1.5rem;
+}
+
+.main-end-email-img {}
+
+/* -------footer------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    color: rgba(40, 58, 75, 0.596);
+}
+
+
+/* Project Responsive */
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .container {
+        max-width: 720px;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .head-img {
+        flex-basis: 40%;
+        width: 40%;
+    }
+
+    .head-content {
+        flex-basis: 60%;
+    }
+
+    .head-btns {
+        flex-wrap: wrap;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .menu {
+        width: 11rem;
+        position: fixed;
+        top: 0;
+        left: -176px;
+        bottom: 0;
+        padding: 1rem;
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        transition: 0.3s all;
+    }
+
+    .a-options {
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .nav-icon {
+        display: block;
+    }
+
+    .head-body {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .head-img,
+    .head-end-img {
+        width: 60%;
+        margin-top: inherit;
+    }
+
+    .head-content {
+        width: 95%;
+    }
+
+    .head-btns {
+        justify-content: center;
+    }
+
+    .comment-body {
+        flex-wrap: wrap;
+    }
+
+    .comment-person {
+        width: 45%;
+    }
+
+    .main-end-contant {
+        flex-wrap: wrap;
+        /* justify-content: center; */
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        font-size: x-small;
+    }
+
+    .menu {
+        width: 7rem;
+    }
+
+    .head-top {
+        margin-right: 3%;
+        margin-left: 3%;
+    }
+
+    .head-end-simples {
+        flex-wrap: wrap;
+    }
+
+    .coments {
+        padding: 2rem 1rem;
+    }
+
+    .comment-person {
+        width: 100%;
+    }
+
+    .comment-person-data {
+        padding-left: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .comment-logos {
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .comment-logo-img {
+        min-width: 50px;
+        margin-top: 1rem;
+    }
+
+    .portfolio-item {
+        width: 45%;
+        min-width: 150px;
+    }
+
+    .main-end-contant {
+        /* flex-wrap: wrap; */
+        justify-content: center;
+    }
+
+    .main-end-contant {
+        padding: 2rem 1rem;
+    }
+
+    .main-end-tit {
+        margin-bottom: 1rem;
+    }
+
+    .main-end-email {
+        padding: 0.1rem;
+        width: 80%;
+        justify-content: space-between;
+        max-width: 300px;
+    }
+
+    .main-end-email-text {
+        padding: 0.7rem;
+        width: 80%;
+    }
+
+    .main-end-email-btn {
+        padding: 0.55rem 0.3rem;
+        width: 20%;
+    }
+}
