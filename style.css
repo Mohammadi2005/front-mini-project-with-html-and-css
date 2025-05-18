@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    font-family: cursive;
+}
+body {
+    background-color: #080710;
+}
+
+/* .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+} */
+
+.container{
+    position: relative;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+
+.myForm{
+    box-sizing: border-box;
+    position: absolute;
+    top: 80px;
+    left: 161px;
+    width: 400px;
+    padding: 35px;
+    padding-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    border: 2px solid rgba(255, 255, 255, 0.13);
+    margin-left: auto;
+    margin-right: auto;
+    margin: auto;
+    z-index: 2;
+    box-shadow: 1px 1px 16px rgba(0, 0, 0, 0.4);
+    /* //////////////////////////////////// */
+    backdrop-filter: blur(8px);
+    /* //////////////////////////////////// */
+}
+
+.form-head{
+    text-align: center;
+}
+
+p{
+    font-size: 32px;
+    color: whitesmoke;
+}
+
+label{
+    margin-bottom: 2px;
+    font-size: 18px;
+    color: whitesmoke;
+}
+
+input{
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.07);
+    height: 50px;
+    width: 100%;
+    padding: 0px 10px;
+    font-weight: 300;
+    color: whitesmoke;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.07);
+}
+
+input:focus{
+    border: 3px solid rgba(255, 255, 255, 0.07);
+    outline: 1px solid rgb(249, 249, 250);
+}
+
+button{
+    font-size: 17px;
+    font-weight: 500;
+    padding: 15px 0px;
+    background-color: whitesmoke;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.07);
+}
+
+
+.circle1{
+    z-index: 1;
+    position: absolute;
+    top: 180px;
+    right: 450px;
+    margin-left: 50px;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(17, 32, 83), rgb(75, 98, 175));
+}
+
+.circle2{
+    z-index: 1;
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    margin-left: 450px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(97, 172, 153), rgb(3, 46, 35));
+}
+
+.circle3{
+    z-index: 1;
+    position: absolute;
+    right: 200px;
+    margin-left: 450px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(172, 97, 97), rgb(46, 3, 3));
+}
